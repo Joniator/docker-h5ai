@@ -6,7 +6,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
   wget unzip patch
 
 # install h5ai and patch configuration
-RUN wget http://release.larsjung.de/h5ai/h5ai-0.24.1.zip
+RUN wget https://release.larsjung.de/h5ai/develop/h5ai-0.29.0%2B001~44e53ab.zip
 RUN unzip h5ai-0.24.1.zip -d /usr/share/h5ai
 
 # patch h5ai because we want to deploy it ouside of the document root and use /var/www as root for browsing
